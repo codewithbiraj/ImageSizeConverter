@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Image Size Converter";
+}
+
+<h2>Image Size Converter</h2>
+
+
+<form asp-controller="Image" asp-action="Resize" method="post" enctype="multipart/form-data">
+    <input type="file" name="ImageFile" required />
+    <br /><br />
+    <button type="submit">Resize Image</button>
+</form>
+
+@if (ViewBag.ImagePath != null)
+{
+    <hr />
+
+    <p><b>Original Size:</b> @ViewBag.OriginalSize.ToString("F2") KB</p>
+    <p><b>New Size:</b> @ViewBag.NewSize.ToString("F2") KB</p>
+    <p><b>Reduced:</b> @ViewBag.ReducedKB.ToString("F2") KB</p>
+    <p><b>Reduction:</b> @ViewBag.ReducedPercent.ToString("F2") %</p>
+
+    <img src="@ViewBag.ImagePath" width="300" />
+    <br />
+    <br />
+
+    <a href="/Image/Download?fileName=@ViewBag.FileName">
+        <button type="button">Download Image</button>
+    </a>
+}

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "syBL5e5GObs=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Others\\source\\repos\\ImageSizeConverterWeb\\ImageSizeConverterWeb\\ImageSizeConverterWeb.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Others\\.nuget\\packages\\microsoft.win32.systemevents\\8.0.0\\microsoft.win32.systemevents.8.0.0.nupkg.sha512",
+    "C:\\Users\\Others\\.nuget\\packages\\system.drawing.common\\8.0.23\\system.drawing.common.8.0.23.nupkg.sha512"
+  ],
+  "logs": []
+}
